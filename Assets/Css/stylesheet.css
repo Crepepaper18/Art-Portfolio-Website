@@ -1,0 +1,412 @@
+body{
+    font-family: 'Pirata One';
+    background-color: #2C2C2C;
+    color: white;
+    margin: 0;
+}
+
+.nav
+{
+    background-color: #2C2C2C;
+    position: fixed;
+    z-index: 4;
+    height: 100vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    font-size: 90px;
+    gap:20px;
+    box-shadow: 5px 0px 8px black;
+    margin-left: -30%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    clip-path: inset(0);
+}
+
+.navAnimation
+{
+    animation: moveIn 0.6s ease-out forwards;
+}
+
+@keyframes moveIn {
+    0%
+    {
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+.closeAnimation
+{
+    animation: moveOut 0.6s ease-out forwards;
+}
+
+@keyframes moveOut {
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+
+.nav>hr
+{
+    width: 100%;
+    margin: 0;
+}
+
+.nav>div
+{
+    margin: 0px 20px 0px 20px;
+}
+
+.close
+{
+    align-self: flex-end;
+    padding-right: 10px;
+}
+
+.closeButton:hover
+{
+    opacity: 0.5;
+    height: 55px;
+    width: 55px;
+}
+
+.icons
+{
+    margin:20px 20px 20px 0px;
+    display: flex;
+    gap:10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link
+{
+    text-decoration: none;
+    color: white;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding-top: 70px;
+}
+
+.elipse1
+{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: #2C2C2C;
+    z-index: 2;
+    position: relative;
+}
+
+.elipse2
+{
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top:-100px;
+    margin-left: 30px;
+    z-index: 1;
+}
+
+.menu
+{
+    font-size: 40px;
+    position: absolute;
+    margin-left: 80px;
+    color: #2C2C2C;
+    z-index: 3;
+}
+
+
+
+.mainHeading
+{
+    font-size: 150px;
+    width: 420px;
+    text-align: right;
+    line-height: 1em;
+}
+
+.motto
+{
+    font-size: 30px;
+    text-align: right;
+    width: 550px;
+    color: #B4205E;
+}
+
+.headline
+{
+    width: 100%;
+    height: 110px;
+    background-color:#3198A1;
+    display: flex;   
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    margin-top:20px;  
+}
+
+.banner
+{
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 90px;
+    position: absolute;
+    animation: move-words 24s linear infinite;
+    margin: 0;
+    width: max-content;
+}
+
+@keyframes move-words 
+{
+    0% {
+      transform: translateX(100%) ;
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.bio
+{
+    display: flex;
+    background-color: #E6DBC6;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.textBio
+{
+    color: #2C2C2C;
+    font-size: 52px;
+    width: 500px;
+}
+
+.img1
+{
+    width: 32rem;
+    height: 40rem;
+    position: relative;
+}
+
+.img2
+{
+    position: absolute;
+    z-index: 1;
+    margin-left:-445px ;
+    margin-top: 40px;
+    height: 35rem;
+}
+
+.feature
+{
+    display: flex;
+    height: 100vh;
+}
+
+.c1
+{
+    flex:1;
+    font-size: 120px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acrylic
+{
+    background-color: #2C2C2C;
+    color: #B4205E;
+}
+
+.oil
+{
+    background-color: #B4205E;
+    color: #3198A1;
+}
+
+.pencil
+{
+    background-color: #3198A1;
+    color: #2C2C2C;
+}
+
+.gallery
+{
+    display: flex;
+    gap:20px;
+    padding: 20px;
+    background-color: #2C2C2C;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.gal img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.photo
+{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: start;
+    flex: 1;
+}
+
+.high
+{
+    height: 500px;
+    width: 100%;
+}
+
+.wide
+{
+    height: 250px;
+    width: 100%;
+}
+
+.lastRow
+{
+    display: flex;
+    justify-content: center;
+    gap:20px
+}
+
+.lastCard
+{
+    display: flex;
+    align-items: center;
+    width: 800px;
+    font-size: 56px;
+    text-align: center;
+    justify-content: center;
+}
+
+.l1
+{
+    background-color: #3198A1;
+}
+
+.l2
+{
+    background-color: #B4205E;
+}
+
+.topBut
+{
+    background-color: #2C2C2C;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.contact
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px 100px 0px;
+    font-size: 36px;
+
+}
+
+.con
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:40px;
+}
+
+.newsletter
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nh
+{
+    flex:1;
+    text-align: center;
+}
+.connect
+{
+    display: flex;
+    flex:2;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:50px
+}
+
+.form
+{
+    display: flex;
+}
+
+.email
+{
+    line-height: 36px;
+    margin-top: 4px;
+}
+
+.inbox
+{
+    height: 36px; 
+    border: none; 
+    width: 260px; 
+    font-size: 16px;
+}
+
+.inbox:focus
+{
+    outline: none;
+}
+
+.jbut
+{
+    height: 38px; 
+    border: none; 
+    width: 64px;
+    background-color: #B4205E;
+    color: white;
+    font-size: 20px;
+    font-family: 'Pirata One';
+}
+
+hr
+{
+    color: white;
+    width: 80%;
+}
+
+.copyright
+{
+    text-align: center;
+    margin:20px 0 20px 0 ;
+}
+
